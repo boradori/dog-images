@@ -8,13 +8,17 @@ export interface Dog {
 export interface Breed {
   breed: string
   entities: {
-    dogs?: object
+    dogs?: {
+      [key: string]: Dog
+    }
   }
   result: Array<string>
 }
 
 export interface FavoriteDogs {
-  dogs: object
+  dogs: {
+    [key: string]: Dog
+  }
   result: Array<string>
 }
 
@@ -22,6 +26,7 @@ export interface DogState {
   readonly currentBreed: Breed
   readonly searchedBreeds: Array<Breed>
   readonly favoriteDogs: FavoriteDogs
+  readonly allBreeds: Array<string>
   readonly isLoading: boolean
 }
 

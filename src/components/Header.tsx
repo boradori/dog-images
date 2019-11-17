@@ -1,12 +1,12 @@
 import React, { FC } from 'react'
 import styled from '@emotion/styled'
-// import Icon from './Icon'
+import Icon from './Icon'
 
 const Header: FC = () => {
   return (
     <Container>
       <Title>Dog Breeds</Title>
-      {/* <Icon icon="redHeartIcon" alt="red heart icon" /> */}
+      <Icon icon="redHeartIcon" alt="red heart icon" />
     </Container>
   )
 }

@@ -62,6 +62,7 @@ const SearchField = styled.input({
   width: '460px',
   border: '0px none',
   borderRadius: '4px',
+  outline: 'none',
   fontFamily: 'Nunito Sans',
   fontStyle: 'normal',
   fontWeight: 'normal',
@@ -79,12 +80,16 @@ const SearchButton = styled.button({
   height: '36px',
   width: '100px',
   border: '0px none',
+  outline: 'none',
   alignSelf: 'center',
   fontFamily: 'Nunito Sans',
   fontStyle: 'normal',
   fontWeight: 'bold',
   fontSize: '14px',
   lineHeight: '19px',
+  ':hover, :active': {
+    background: colors.veryDarkGrayishBlue
+  }
 })
 
 const mapDispatchToProps = {
