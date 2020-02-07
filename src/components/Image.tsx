@@ -46,13 +46,17 @@ interface ContainerProps {
   size: string
 }
 
-const Container = styled.div<ContainerProps>(props => ({
-  position: 'relative',
-  width: props.size === 'medium' ? '160px' : '128px',
-  height: props.size === 'medium' ? '160px' : '128px',
-  margin: props.size === 'medium' ? '13px' : '6px',
-  background: colors.veryLightGray,
-}))
+const Container = styled.div<ContainerProps>`
+  position: relative;
+  width: ${props => props.size === 'medium' ? '151px' : '117px'};
+  height: ${props => props.size === 'medium' ? '151px' : '117px'};
+  @media (max-width: 640px) {
+    width: ${props => props.size === 'medium' ? '171.5px' : '117px'};
+    height: ${props => props.size === 'medium' ? '171.5px' : '117px'};
+  }
+  margin: ${props => props.size === 'medium' ? '8px' : '4px'};
+  background: ${colors.veryLightGray};
+`
 
 const ImageContainer = styled.img({
   width: '100%',

@@ -38,8 +38,9 @@ const App: FC<Props> = ({fetchAllBreeds}) => {
 const Container = styled.div({
   margin: '0 auto',
   height: '100%',
-  width: '560px',
-  paddingTop: '60px',
+  maxWidth: '640px',
+  width: '100%',
+  paddingTop: '20px',
 })
 
 const mapStateToProps = (state: AppState) => ({

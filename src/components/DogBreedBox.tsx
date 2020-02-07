@@ -38,6 +38,7 @@ const BreedBox = styled.button({
   width: '160px',
   height: '30px',
   borderRadius: '4px',
+  margin: '1px',
   background: colors.mostlyWhiteGrey,
   border: '0px none',
   outline: 'none',

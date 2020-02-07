@@ -14,11 +14,15 @@ const Header: FC = () => {
 const Container = styled.div({
   display: 'flex',
   justifyContent: 'space-between',
+  paddingLeft: '1rem',
+  paddingRight: '1rem',
+  maxWidth: '640px',
+  width: '100%',
 })
 
 const Title = styled.h1({
   fontWeight: 'bold',
-  fontSize: '24px',
+  fontSize: '1.5rem',
   lineHeight: '33px',
 })
 

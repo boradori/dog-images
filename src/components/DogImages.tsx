@@ -61,15 +61,22 @@ const DogImages: FC<Props> = ({currentBreed, favoriteDogs, allBreeds}) => {
 
 const Container = styled.div({
   display: 'flex',
+  maxWidth: '640px',
+  width: '100%',
   flexDirection: 'column',
+  alignItems: 'center',
   marginTop: '20px',
 })
 
-const ImagesContainer = styled.div({
-  display: 'flex',
-  flexWrap: 'wrap',
-  height: '100%'
-})
+const ImagesContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 501px;
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+  height: 100%;
+`
 
 const Divider = styled.div({
   marginTop: '20px',
@@ -78,12 +85,14 @@ const Divider = styled.div({
 
 const Footer = styled.div({
   display: 'flex',
-  margin: '20px 0'
+  margin: '20px 0',
+  paddingLeft: '1rem',
+  paddingRight: '1rem'
 })
 
 const Title = styled.h1({
   fontWeight: 'bold',
-  fontSize: '24px',
+  fontSize: '1.5rem',
   lineHeight: '33px',
   marginLeft: '25px'
 })

@@ -49,17 +49,24 @@ const SearchBar: FC<Props> = ({fetchDogs}) => {
 }
 
 const Container = styled.div({
-  marginTop: '40px'
+  marginTop: '20px',
+  maxWidth: '640px',
+  width: '100%',
+  paddingLeft: '1rem',
+  paddingRight: '1rem',
 })
 
 const Form = styled.form({
   display: 'flex',
-  justifyContent: 'space-between',
+  justifyContent: 'space-center',
+  flex: 'wrap',
+  maxWidth: '640px',
+  width: '100%',
 })
 
 const SearchField = styled.input({
   background: colors.mostlyWhiteGrey,
-  width: '460px',
+  width: '100%',
   border: '0px none',
   borderRadius: '4px',
   outline: 'none',
@@ -78,7 +85,7 @@ const SearchButton = styled.button({
   borderRadius: '4px',
   color: colors.white,
   height: '36px',
-  width: '100px',
+  minWidth: '100px',
   border: '0px none',
   outline: 'none',
   alignSelf: 'center',
