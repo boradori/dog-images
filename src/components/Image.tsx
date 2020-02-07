@@ -50,9 +50,17 @@ const Container = styled.div<ContainerProps>`
   position: relative;
   width: ${props => props.size === 'medium' ? '151px' : '117px'};
   height: ${props => props.size === 'medium' ? '151px' : '117px'};
-  @media (max-width: 640px) {
-    width: ${props => props.size === 'medium' ? '171.5px' : '117px'};
-    height: ${props => props.size === 'medium' ? '171.5px' : '117px'};
+  @media (max-width: 320px) {
+    width: ${props => props.size === 'medium' ? '144px' : '98.6px'};
+    height: ${props => props.size === 'medium' ? '144px' : '98.6px'};
+  }
+  @media (min-width: 321px) and (max-width: 375px) {
+    width: ${props => props.size === 'medium' ? '109px' : '85.75px'};
+    height: ${props => props.size === 'medium' ? '109px' : '85.75px'};
+  }
+  @media (min-width: 376px) and (max-width: 414px) {
+    width: ${props => props.size === 'medium' ? '121px' : '94.75px'};
+    height: ${props => props.size === 'medium' ? '121px' : '94.75px'};
   }
   margin: ${props => props.size === 'medium' ? '8px' : '4px'};
   background: ${colors.veryLightGray};
